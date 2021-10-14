@@ -2,7 +2,7 @@ import time
 from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
 
-PATHTOBEOBSERVED = 'C:/Users/Anvar Kalykov/Desktop/check_file/*'
+PATHTOBEOBSERVED = 'C:/Users/Anvar Kalykov/Desktop/check_file'
 
 
 def on_created(event):
