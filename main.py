@@ -17,7 +17,7 @@ def on_created(event):
     try:
         connection = psycopg2.connect(user="postgres", password=12345678, host="127.0.0.1", port=5432, database="postgres")
         cursor = connection.cursor()
-        cursor.execute = "SELECT name, surename FROM mobile WHERE number = " + head + ";"
+        cursor.execute("SELECT name, surename FROM mobile WHERE number='+" + head + "';")
         rows = cursor.fetchall()
         for row in rows:
             print(row[0], row[1])
