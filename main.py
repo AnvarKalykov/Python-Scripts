@@ -12,7 +12,6 @@ PATHTOBEOBSERVED = 'C:/Users/Anvar Kalykov/Desktop/check_file'
 def on_created(event):
     s = event.src_path
     head, sep, tail = s.replace('C:/Users/Anvar Kalykov/Desktop/check_file\\', '').partition('_')
-    print(head)
 
     try:
         connection = psycopg2.connect(user="postgres", password=12345678, host="127.0.0.1", port=5432, database="postgres")
