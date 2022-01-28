@@ -5,6 +5,7 @@ from watchdog.events import PatternMatchingEventHandler
 import psycopg2
 from psycopg2 import Error
 
+#for
 
 PATHTOBEOBSERVED = 'C:/Users/Anvar Kalykov/Desktop/check_file'
 
